@@ -1,0 +1,45 @@
+@import "variables";
+@import "fonts";
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+main,
+section {
+ overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+ text-decoration: none;
+  }
+  
+ul {
+ list-style: none;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 1112px;
+    margin: 0 auto;
+    padding: 0 10px;
+    // box-sizing: border-box;
+    // justify-content: space-between;
+    }
+
+  .border {
+    max-width: 1120px;
+    margin: 93px 164px;
+    border: 1px solid $span-color;
+
+    @media (max-width: 1024px) {
+      max-width: 560px;
+      margin: 45px 75px;
+    }
+}

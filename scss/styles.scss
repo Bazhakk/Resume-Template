@@ -1,0 +1,195 @@
+@import "variables";
+@import "fonts";
+@import "commons";
+
+
+//BACKGROUND BLOCK
+
+.background-block {
+    position: absolute;
+    min-width: 100%;
+    min-height: 695px;
+    left: 0;
+    background-color: $bg-bord;
+    z-index: -1;
+  }
+
+
+  //LEFT-BLOCK
+
+  .left-block {
+    max-width: 344px;
+    flex-basis: 42%;
+  }
+  
+  .box {
+    writing-mode: vertical-rl;
+        transform: rotate(0.5turn);
+        margin-right: 164px;
+        margin-top: 150px;
+        margin-bottom: 136px;
+
+    &__subtitle,
+    &__title,
+    &__name {
+        font-family: 'Bai';
+        font-weight: 700;
+        color: $white-color;
+        margin: 0;
+    }
+  
+    &__title {
+      font-size: 56px;
+      line-height: 64px;
+      //letter-spacing: -0.01em;
+    }
+  
+    &__subtitle{
+      margin-bottom: 30px;
+      font-size: 80px;
+      line-height: 96px;
+      //letter-spacing: -0.01em;
+    }
+  
+    &__name {
+        font-size: 24px;
+        line-height: 32px;
+        //margin-right: 62px;
+    }
+  }
+  
+  //SOCIAL
+
+  .social {
+    padding: 24px;
+    margin-bottom: 190px;
+    background-color: aqua;
+  
+    &__title {
+        font-family: 'Bai';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+        color: $bl-color;
+        margin-bottom: 16px;
+    }
+  
+    &__instagram,
+    &__ball {
+        display: flex;
+        margin: 12px;
+        color: $bl-color;
+    }
+  
+    &__link {
+      position: relative;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      }
+  
+    &__instagram {
+        max-width: 250px;
+    }
+
+    &__ball {
+        max-width: 260px;
+    }
+  }
+  
+
+  //EDUCATION
+
+  .education {
+    background-color: aqua;
+    max-width: 248px;
+    //margin-top: 192px;
+    margin-bottom: 104px;
+  
+    &__logo {
+        font-family: 'Bai';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__box {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    &__subtitle {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__years {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $bg-bord;
+    }
+  }
+  
+  //SKILLS
+
+  .skills {
+    max-width: 248px;
+    margin-top: 100px;
+    background-color: aqua;
+  
+    &__logo {
+        font-family: 'Bai';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__box {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+
+//RIGHT-BLOCK
+
+.right-block {
+    max-width: 632px;
+    flex-basis: 62%;
+    padding: 115px 0 160px;
+  
+    &__title {
+      margin-bottom: 35px;
+      margin-left: 30px;
+      max-width: 632px;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: $white-color;
+      background-color: aqua;
+    }
+  
+    &__img {
+      display: block;
+      max-width: 632px;
+      margin: 55px 0 190px auto;
+    }
+  }
