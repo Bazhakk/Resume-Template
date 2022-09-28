@@ -8,47 +8,43 @@
 .background-block {
     position: absolute;
     min-width: 100%;
-    min-height: 695px;
+    min-height: 696px;
     left: 0;
-    background-color: $bg-bord;
     z-index: -1;
+    background-color: $bg-bord;
   }
-
 
   //LEFT-BLOCK
 
   .left-block {
     max-width: 344px;
     flex-basis: 42%;
-  }
   
   .box {
     writing-mode: vertical-rl;
-        transform: rotate(0.5turn);
-        margin-right: 164px;
-        margin-top: 150px;
-        margin-bottom: 136px;
+    transform: rotate(0.5turn);
+    margin-right: 164px;
+    margin-top: 150px;
+    margin-bottom: 136px;
 
     &__subtitle,
     &__title,
     &__name {
         font-family: 'Bai';
         font-weight: 700;
-        color: $white-color;
         margin: 0;
+        color: $white-color;
     }
   
     &__title {
       font-size: 56px;
       line-height: 64px;
-      //letter-spacing: -0.01em;
     }
   
     &__subtitle{
       margin-bottom: 30px;
       font-size: 80px;
       line-height: 96px;
-      //letter-spacing: -0.01em;
     }
   
     &__name {
@@ -62,22 +58,21 @@
 
   .social {
     padding: 24px;
-    margin-bottom: 190px;
-    background-color: aqua;
+    margin-top: 88px;
+    margin-bottom: 192px ;
+    //background-color: aqua;
   
     &__title {
         font-family: 'Bai';
         font-weight: 700;
         font-size: 16px;
         line-height: 32px;
-        color: $bl-color;
         margin-bottom: 16px;
+        color: $bl-color;
     }
   
     &__instagram,
     &__ball {
-        display: flex;
-        margin: 12px;
         color: $bl-color;
     }
   
@@ -91,10 +86,14 @@
   
     &__instagram {
         max-width: 250px;
+        display: block;
+        position: relative;
+        margin-bottom: 16px;
     }
 
     &__ball {
         max-width: 260px;
+        position: relative;
     }
   }
   
@@ -102,7 +101,7 @@
   //EDUCATION
 
   .education {
-    background-color: aqua;
+    //background-color: aqua;
     max-width: 248px;
     //margin-top: 192px;
     margin-bottom: 104px;
@@ -146,7 +145,7 @@
   .skills {
     max-width: 248px;
     margin-top: 100px;
-    background-color: aqua;
+    //background-color: aqua;
   
     &__logo {
         font-family: 'Bai';
@@ -166,6 +165,7 @@
         line-height: 32px;
     }
 }
+}
 
 
 //RIGHT-BLOCK
@@ -176,20 +176,68 @@
     padding: 115px 0 160px;
   
     &__title {
-      margin-bottom: 35px;
-      margin-left: 30px;
-      max-width: 632px;
       font-family: 'Inter';
       font-weight: 400;
       font-size: 18px;
       line-height: 32px;
       color: $white-color;
-      background-color: aqua;
     }
   
     &__img {
-      display: block;
-      max-width: 632px;
-      margin: 55px 0 190px auto;
+        margin-top: 55px;
+        margin-bottom: 190px;
+    }
+
+    &__experience {
+        margin-bottom: 32px;
+        font-family: 'Bai';
+        font-size: 24px;
+        line-height: 32px;
+        color: $bl-color;
+    }
+
+
+  .info {
+    background-color: $info-color;
+    margin-bottom: 24px;
+
+    &__item {
+        padding: 40px 40px;
+    }
+
+    &__present {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+        color: $info-present;
+    }
+
+    &__title {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 8px;
+        color: $bl-color;
+    }
+
+    &__text {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $info-text;
+
+        &_bottom {
+            margin-top: 8px;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: $info-text;
+        }
     }
   }
+}
