@@ -58,6 +58,11 @@ ul {
   padding: 0 10px;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .container {
+    display: block;
+  }
+}
 
 .border {
   max-width: 1120px;
@@ -79,10 +84,22 @@ ul {
   z-index: -1;
   background-color: #E94D35;
 }
+@media screen and (max-width: 1024px) {
+  .background-block {
+    background-color: #FFFFFF;
+  }
+}
 
 .left-block {
   max-width: 344px;
   flex-basis: 42%;
+}
+@media screen and (max-width: 1024px) {
+  .left-block {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
 }
 .left-block .box {
   writing-mode: vertical-rl;
@@ -91,11 +108,23 @@ ul {
   margin-top: 150px;
   margin-bottom: 136px;
 }
+@media screen and (max-width: 1024px) {
+  .left-block .box {
+    transform: rotate(-90deg);
+    padding: 20px;
+    margin: 10px auto;
+  }
+}
 .left-block .box__subtitle, .left-block .box__title, .left-block .box__name {
   font-family: "Bai";
   font-weight: 700;
   margin: 0;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .left-block .box__subtitle, .left-block .box__title, .left-block .box__name {
+    color: #000000;
+  }
 }
 .left-block .box__title {
   font-size: 56px;
@@ -106,6 +135,11 @@ ul {
   font-size: 80px;
   line-height: 96px;
 }
+@media screen and (max-width: 1024px) {
+  .left-block .box__subtitle {
+    margin-bottom: 15px;
+  }
+}
 .left-block .box__name {
   font-size: 24px;
   line-height: 32px;
@@ -115,6 +149,13 @@ ul {
   margin-top: 88px;
   margin-bottom: 192px;
 }
+@media screen and (max-width: 1024px) {
+  .left-block .social {
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+  }
+}
 .left-block .social__title {
   font-family: "Bai";
   font-weight: 700;
@@ -122,6 +163,11 @@ ul {
   line-height: 32px;
   margin-bottom: 16px;
   color: #000000;
+}
+@media screen and (max-width: 1024px) {
+  .left-block .social__title {
+    margin-bottom: 8px;
+  }
 }
 .left-block .social__instagram, .left-block .social__ball {
   color: #000000;
@@ -133,19 +179,41 @@ ul {
   font-size: 18px;
   line-height: 32px;
 }
+@media screen and (max-width: 1024px) {
+  .left-block .social__link {
+    color: #000000;
+  }
+}
 .left-block .social__instagram {
   max-width: 250px;
   display: block;
   position: relative;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 1024px) {
+  .left-block .social__instagram {
+    max-width: 125px;
+    margin: 0 auto;
+  }
+}
 .left-block .social__ball {
   max-width: 260px;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  .left-block .social__ball {
+    max-width: 130px;
+  }
+}
 .left-block .education {
   max-width: 248px;
   margin-bottom: 104px;
+}
+@media screen and (max-width: 1024px) {
+  .left-block .education {
+    margin: 50px auto;
+    text-align: center;
+  }
 }
 .left-block .education__logo {
   font-family: "Bai";
@@ -155,6 +223,11 @@ ul {
 }
 .left-block .education__box {
   margin-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .left-block .education__box {
+    margin-bottom: 20px;
+  }
 }
 .left-block .education__title {
   font-family: "Inter";
@@ -179,6 +252,12 @@ ul {
   max-width: 248px;
   margin-top: 100px;
 }
+@media screen and (max-width: 1024px) {
+  .left-block .skills {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 .left-block .skills__logo {
   font-family: "Bai";
   font-weight: 700;
@@ -187,6 +266,11 @@ ul {
 }
 .left-block .skills__box {
   margin-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .left-block .skills__box {
+    margin-bottom: 20px;
+  }
 }
 .left-block .skills__title {
   font-family: "Inter";
@@ -200,6 +284,13 @@ ul {
   flex-basis: 62%;
   padding: 115px 0 160px;
 }
+@media screen and (max-width: 1024px) {
+  .right-block {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 10px;
+  }
+}
 .right-block__title {
   font-family: "Inter";
   font-weight: 400;
@@ -208,22 +299,44 @@ ul {
   color: #FFFFFF;
 }
 .right-block__img {
-  margin-top: 55px;
-  margin-bottom: 190px;
+  margin-bottom: 192px;
+}
+@media screen and (max-width: 1024px) {
+  .right-block__img {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px;
+  }
 }
 .right-block__experience {
-  margin-bottom: 32px;
   font-family: "Bai";
   font-size: 24px;
   line-height: 32px;
   color: #000000;
 }
+@media screen and (max-width: 1024px) {
+  .right-block__experience {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 .right-block .info {
   background-color: #FAFAFA;
   margin-bottom: 24px;
 }
+@media screen and (max-width: 1024px) {
+  .right-block .info {
+    margin: 0 auto 6px;
+    text-align: center;
+  }
+}
 .right-block .info__item {
   padding: 40px 40px;
+}
+@media screen and (max-width: 1024px) {
+  .right-block .info__item {
+    padding: 20px 20px;
+  }
 }
 .right-block .info__present {
   font-family: "Inter";

@@ -43,6 +43,11 @@ ul {
   padding: 0 10px;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .container {
+    display: block;
+  }
+}
 
 .border {
   max-width: 1120px;
