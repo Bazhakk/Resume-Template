@@ -111,8 +111,18 @@ ul {
 @media screen and (max-width: 1024px) {
   .left-block .box {
     transform: rotate(-90deg);
-    padding: 20px;
-    margin: 10px auto;
+    margin: 0 auto;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: aqua;
+  }
+}
+@media screen and (max-width: 320px) {
+  .left-block .box {
+    transform: rotate(-90deg);
+    margin: auto 20px;
+    overflow: hidden;
+    background-color: aqua;
   }
 }
 .left-block .box__subtitle, .left-block .box__title, .left-block .box__name {
@@ -130,6 +140,12 @@ ul {
   font-size: 56px;
   line-height: 64px;
 }
+@media screen and (max-width: 480px) {
+  .left-block .box__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
 .left-block .box__subtitle {
   margin-bottom: 30px;
   font-size: 80px;
@@ -138,6 +154,13 @@ ul {
 @media screen and (max-width: 1024px) {
   .left-block .box__subtitle {
     margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .left-block .box__subtitle {
+    margin: 30px 30px;
+    font-size: 40px;
+    line-height: 16px;
   }
 }
 .left-block .box__name {
@@ -152,8 +175,9 @@ ul {
 @media screen and (max-width: 1024px) {
   .left-block .social {
     margin: 0 auto;
-    padding: 12px;
+    overflow-x: hidden;
     text-align: center;
+    background-color: aqua;
   }
 }
 .left-block .social__title {
@@ -211,8 +235,8 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .left-block .education {
-    margin: 50px auto;
-    text-align: center;
+    margin: 0 auto;
+    background-color: aqua;
   }
 }
 .left-block .education__logo {
@@ -255,7 +279,8 @@ ul {
 @media screen and (max-width: 1024px) {
   .left-block .skills {
     margin: 0 auto;
-    text-align: center;
+    overflow: hidden;
+    background-color: aqua;
   }
 }
 .left-block .skills__logo {
@@ -288,7 +313,7 @@ ul {
   .right-block {
     max-width: 100%;
     margin: 0 auto;
-    padding: 10px 10px;
+    padding: 20px;
   }
 }
 .right-block__title {
@@ -303,9 +328,8 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .right-block__img {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px 20px;
+    margin: 0 auto 96px;
+    justify-content: center;
   }
 }
 .right-block__experience {
@@ -324,19 +348,8 @@ ul {
   background-color: #FAFAFA;
   margin-bottom: 24px;
 }
-@media screen and (max-width: 1024px) {
-  .right-block .info {
-    margin: 0 auto 6px;
-    text-align: center;
-  }
-}
 .right-block .info__item {
   padding: 40px 40px;
-}
-@media screen and (max-width: 1024px) {
-  .right-block .info__item {
-    padding: 20px 20px;
-  }
 }
 .right-block .info__present {
   font-family: "Inter";

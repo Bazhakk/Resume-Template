@@ -39,8 +39,17 @@
 
     @media screen and (max-width: 1024px){
       transform: rotate(-90deg);
-      padding: 20px;
-      margin: 10px auto;
+      margin: 0 auto;
+      overflow-x: hidden;
+      text-align: center;
+      background-color: aqua;
+    }
+
+    @media screen and (max-width: 320px){
+      transform: rotate(-90deg);
+      margin: auto 20px;
+      overflow: hidden;
+      background-color: aqua;
     }
     
 
@@ -60,6 +69,11 @@
     &__title {
       font-size: 56px;
       line-height: 64px;
+
+      @media screen and (max-width: 480px){
+        font-size: 28px;
+        line-height: 32px;
+      }
     }
   
     &__subtitle{
@@ -69,13 +83,18 @@
 
       @media screen and (max-width: 1024px){
         margin-bottom: 15px;
-      }      
+      }
+      
+      @media screen and (max-width: 480px){
+        margin: 30px 30px;
+        font-size: 40px;
+        line-height: 16px;
+      }
     }
   
     &__name {
         font-size: 24px;
         line-height: 32px;
-        //margin-right: 62px;
     }
   }
   
@@ -88,8 +107,9 @@
       
       @media screen and (max-width: 1024px){
         margin: 0 auto;
-        padding: 12px;
+        overflow-x: hidden;
         text-align: center;
+        background-color: aqua;
       }
     
       &__title {
@@ -149,12 +169,11 @@
 
   .education {
     max-width: 248px;
-    //margin-top: 192px;
     margin-bottom: 104px;
 
     @media screen and (max-width: 1024px){
-      margin: 50px auto;
-      text-align: center;
+      margin: 0 auto;
+      background-color: aqua;
     }
   
     &__logo {
@@ -203,7 +222,8 @@
 
     @media screen and (max-width: 1024px){
       margin: 0 auto;
-      text-align: center;
+      overflow: hidden;
+      background-color: aqua;
     }
   
     &__logo {
@@ -241,7 +261,7 @@
     @media screen and (max-width: 1024px){
       max-width: 100%;
       margin: 0 auto;
-      padding: 10px 10px;
+      padding: 20px;
     }
   
     &__title {
@@ -256,9 +276,8 @@
         margin-bottom: 192px;
 
         @media screen and (max-width: 1024px){
-          max-width: 100%;
-          margin: 0 auto;
-          padding: 20px 20px;
+          margin: 0 auto 96px;
+          justify-content: center;
         }
     }
 
@@ -279,17 +298,8 @@
     background-color: $info-color;
     margin-bottom: 24px;
 
-    @media screen and (max-width: 1024px){
-      margin: 0 auto 6px;
-      text-align: center;
-    }
-
     &__item {
         padding: 40px 40px;
-
-        @media screen and (max-width: 1024px){
-          padding: 20px 20px;
-        }
     }
 
     &__present {
@@ -308,6 +318,7 @@
         line-height: 32px;
         margin-bottom: 8px;
         color: $bl-color;
+
     }
 
     &__text {
