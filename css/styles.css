@@ -96,7 +96,6 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .left-block {
-    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
   }
@@ -114,15 +113,6 @@ ul {
     margin: 0 auto;
     overflow-x: hidden;
     text-align: center;
-    background-color: aqua;
-  }
-}
-@media screen and (max-width: 320px) {
-  .left-block .box {
-    transform: rotate(-90deg);
-    margin: auto 20px;
-    overflow: hidden;
-    background-color: aqua;
   }
 }
 .left-block .box__subtitle, .left-block .box__title, .left-block .box__name {
@@ -153,12 +143,7 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .left-block .box__subtitle {
-    margin-bottom: 15px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .left-block .box__subtitle {
-    margin: 30px 30px;
+    margin: 10px;
     font-size: 40px;
     line-height: 16px;
   }
@@ -177,7 +162,6 @@ ul {
     margin: 0 auto;
     overflow-x: hidden;
     text-align: center;
-    background-color: aqua;
   }
 }
 .left-block .social__title {
@@ -236,7 +220,6 @@ ul {
 @media screen and (max-width: 1024px) {
   .left-block .education {
     margin: 0 auto;
-    background-color: aqua;
   }
 }
 .left-block .education__logo {
@@ -279,8 +262,6 @@ ul {
 @media screen and (max-width: 1024px) {
   .left-block .skills {
     margin: 0 auto;
-    overflow: hidden;
-    background-color: aqua;
   }
 }
 .left-block .skills__logo {
@@ -322,6 +303,11 @@ ul {
   font-size: 18px;
   line-height: 32px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .right-block__title {
+    color: #000000;
+  }
 }
 .right-block__img {
   margin-bottom: 192px;

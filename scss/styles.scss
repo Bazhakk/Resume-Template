@@ -25,7 +25,6 @@
     flex-basis: 42%;
 
     @media screen and (max-width: 1024px){
-      max-width: 100%;
       margin: 0 auto;
       padding: 20px;
     }
@@ -42,16 +41,7 @@
       margin: 0 auto;
       overflow-x: hidden;
       text-align: center;
-      background-color: aqua;
     }
-
-    @media screen and (max-width: 320px){
-      transform: rotate(-90deg);
-      margin: auto 20px;
-      overflow: hidden;
-      background-color: aqua;
-    }
-    
 
     &__subtitle,
     &__title,
@@ -80,13 +70,9 @@
       margin-bottom: 30px;
       font-size: 80px;
       line-height: 96px;
-
-      @media screen and (max-width: 1024px){
-        margin-bottom: 15px;
-      }
       
-      @media screen and (max-width: 480px){
-        margin: 30px 30px;
+      @media screen and (max-width: 1024px){
+        margin: 10px;
         font-size: 40px;
         line-height: 16px;
       }
@@ -109,7 +95,6 @@
         margin: 0 auto;
         overflow-x: hidden;
         text-align: center;
-        background-color: aqua;
       }
     
       &__title {
@@ -173,7 +158,6 @@
 
     @media screen and (max-width: 1024px){
       margin: 0 auto;
-      background-color: aqua;
     }
   
     &__logo {
@@ -222,8 +206,6 @@
 
     @media screen and (max-width: 1024px){
       margin: 0 auto;
-      overflow: hidden;
-      background-color: aqua;
     }
   
     &__logo {
@@ -270,6 +252,10 @@
       font-size: 18px;
       line-height: 32px;
       color: $white-color;
+
+      @media screen and (max-width: 1024px){
+        color: $bl-color;
+      }
     }
   
     &__img {
