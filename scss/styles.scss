@@ -7,11 +7,21 @@
 
 .background-block {
     position: absolute;
-    min-width: 100%;
-    min-height: 696px;
+    width: 0;
+    min-height: 695px;
     left: 0;
     z-index: -1;
     background-color: $bg-bord;
+    animation: backgroundBlockAnima .6s linear .1s forwards;
+
+    @keyframes backgroundBlockAnima {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
 
     @media screen and (max-width: 1024px){
       background-color: $white-color;
@@ -260,6 +270,7 @@
   
     &__img {
         margin-bottom: 192px;
+        // width: calc(632px + (632 - 300) * (100vw - 1920px) / (1920 - 320));
 
         @media screen and (max-width: 1024px){
           margin: 0 auto 96px;
@@ -322,6 +333,16 @@
             line-height: 24px;
             color: $info-text;
         }
+    }
+  }
+}
+
+.slider {
+
+  &__item {
+
+    &.slick-center {
+      border: 3px solid red;
     }
   }
 }
