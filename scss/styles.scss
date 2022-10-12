@@ -90,6 +90,12 @@
       padding: 24px;
       margin-top: 88px;
       margin-bottom: 192px ;
+
+      svg {
+        display: flex;
+        align-items: center;
+
+      }
       
       @media screen and (max-width: 1024px){
         margin: 0 auto;
@@ -112,7 +118,8 @@
     
       &__instagram,
       &__ball {
-          color: $bl-color;
+        cursor: pointer;
+        color: $bl-color;
       }
     
       &__link {
@@ -121,6 +128,10 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 32px;
+
+        &:hover{
+          text-decoration: underline;
+        }
 
         @media screen and (max-width: 1024px){
           color: $bl-color;
