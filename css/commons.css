@@ -40,7 +40,6 @@ ul {
   width: 100%;
   max-width: 1112px;
   margin: 0 auto;
-  padding: 0 10px;
   justify-content: space-between;
 }
 @media screen and (max-width: 1024px) {

@@ -55,7 +55,6 @@ ul {
   width: 100%;
   max-width: 1112px;
   margin: 0 auto;
-  padding: 0 10px;
   justify-content: space-between;
 }
 @media screen and (max-width: 1024px) {
@@ -78,11 +77,20 @@ ul {
 
 .background-block {
   position: absolute;
-  min-width: 100%;
-  min-height: 696px;
+  width: 0;
+  min-height: 695px;
   left: 0;
   z-index: -1;
   background-color: #E94D35;
+  animation: backgroundBlockAnima 0.6s linear 0.1s forwards;
+}
+@keyframes backgroundBlockAnima {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .background-block {
@@ -96,8 +104,9 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .left-block {
+    display: flex;
     margin: 0 auto;
-    padding: 20px;
+    flex-wrap: wrap;
   }
 }
 .left-block .box {
@@ -176,6 +185,10 @@ ul {
   margin-bottom: 16px;
   color: #000000;
 }
+.left-block .social__title:hover {
+  transition: 0.9s;
+  transform: rotateX(360deg);
+}
 @media screen and (max-width: 1024px) {
   .left-block .social__title {
     margin-bottom: 8px;
@@ -193,6 +206,7 @@ ul {
   line-height: 32px;
 }
 .left-block .social__link:hover {
+  color: #E94D35;
   text-decoration: underline;
 }
 @media screen and (max-width: 1024px) {
@@ -236,6 +250,10 @@ ul {
   font-size: 24px;
   line-height: 32px;
 }
+.left-block .education__logo:hover {
+  transition: 0.9s;
+  transform: rotateX(360deg);
+}
 .left-block .education__box {
   margin-bottom: 40px;
 }
@@ -278,6 +296,10 @@ ul {
   font-size: 24px;
   line-height: 32px;
 }
+.left-block .skills__logo:hover {
+  transition: 0.9s;
+  transform: rotateX(360deg);
+}
 .left-block .skills__box {
   margin-bottom: 40px;
 }
@@ -312,6 +334,9 @@ ul {
   line-height: 32px;
   color: #FFFFFF;
 }
+.right-block__title:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 1024px) {
   .right-block__title {
     color: #000000;
@@ -319,6 +344,7 @@ ul {
 }
 .right-block__img {
   margin-bottom: 192px;
+  width: calc(632px + 332 * (100vw - 1920px) / 1600);
 }
 @media screen and (max-width: 1024px) {
   .right-block__img {
@@ -332,6 +358,10 @@ ul {
   line-height: 32px;
   color: #000000;
 }
+.right-block__experience:hover {
+  transition: 0.9s;
+  transform: rotateX(360deg);
+}
 @media screen and (max-width: 1024px) {
   .right-block__experience {
     margin: 0 auto;
@@ -344,6 +374,10 @@ ul {
 }
 .right-block .info__item {
   padding: 40px 40px;
+}
+.right-block .info__item:hover {
+  transform: scale(1.1);
+  margin: 5px;
 }
 .right-block .info__present {
   font-family: "Inter";
