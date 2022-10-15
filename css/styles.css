@@ -167,8 +167,7 @@ ul {
   margin-bottom: 192px;
 }
 .left-block .social svg {
-  display: flex;
-  align-items: center;
+  margin-right: 8px;
 }
 @media screen and (max-width: 1024px) {
   .left-block .social {
@@ -194,9 +193,11 @@ ul {
     margin-bottom: 8px;
   }
 }
-.left-block .social__instagram, .left-block .social__ball {
+.left-block .social__item {
   cursor: pointer;
   color: #000000;
+  display: flex;
+  align-items: center;
 }
 .left-block .social__link {
   position: relative;
@@ -215,25 +216,16 @@ ul {
   }
 }
 .left-block .social__instagram {
-  max-width: 250px;
-  display: block;
   position: relative;
   margin-bottom: 16px;
 }
 @media screen and (max-width: 1024px) {
   .left-block .social__instagram {
-    max-width: 125px;
     margin: 0 auto;
   }
 }
 .left-block .social__ball {
-  max-width: 260px;
   position: relative;
-}
-@media screen and (max-width: 1024px) {
-  .left-block .social__ball {
-    max-width: 130px;
-  }
 }
 .left-block .education {
   max-width: 248px;

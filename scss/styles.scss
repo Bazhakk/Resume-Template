@@ -103,8 +103,7 @@
       margin-bottom: 192px;
 
       svg {
-        display: flex;
-        align-items: center;
+        margin-right: 8px;
       }
       
       @media screen and (max-width: 1024px){
@@ -114,27 +113,28 @@
       }
     
       &__title {
-          font-family: 'Bai';
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 32px;
-          margin-bottom: 16px;
-          color: $bl-color;
+        font-family: 'Bai';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        color: $bl-color;
 
-          &:hover{
-            transition: .9s;
-            transform: rotateX(360deg);
-          }
+        &:hover{
+          transition: .9s;
+          transform: rotateX(360deg);
+        }
 
-          @media screen and (max-width: 1024px){
-            margin-bottom: 8px;
-          }
+        @media screen and (max-width: 1024px){
+          margin-bottom: 8px;
+        }
       }
     
-      &__instagram,
-      &__ball {
+      &__item {
         cursor: pointer;
         color: $bl-color;
+        display: flex;
+        align-items: center;
       }
     
       &__link {
@@ -152,27 +152,19 @@
         @media screen and (max-width: 1024px){
           color: $bl-color;
         }
-        }
+      }
     
       &__instagram {
-          max-width: 250px;
-          display: block;
-          position: relative;
-          margin-bottom: 16px;
+        position: relative;
+        margin-bottom: 16px;
 
-          @media screen and (max-width: 1024px){
-            max-width: 125px;
-            margin: 0 auto;
-      }
+        @media screen and (max-width: 1024px){
+          margin: 0 auto;
+        }
       }
 
       &__ball {
-          max-width: 260px;
-          position: relative;
-
-          @media screen and (max-width: 1024px){
-            max-width: 130px;
-      }
+        position: relative;
       }
     }
     
