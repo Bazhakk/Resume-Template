@@ -11,9 +11,9 @@
     min-height: 695px;
     left: 0;
     z-index: -1;
-    background-color: $bg-bord;
     animation: backgroundBlockAnima .6s linear .1s forwards;
-
+    background-color: $bg-bord;
+    
     @keyframes backgroundBlockAnima {
       0% {
         width: 0%;
@@ -35,8 +35,10 @@
     flex-basis: 42%;
 
     @media screen and (max-width: 1024px){
+      width: 100%;
       display: flex;
       margin: 0 auto;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
   
@@ -121,8 +123,8 @@
         color: $bl-color;
 
         &:hover{
-          transition: .9s;
           transform: rotateX(360deg);
+          transition: .9s;
         }
 
         @media screen and (max-width: 1024px){
@@ -131,10 +133,10 @@
       }
     
       &__item {
-        cursor: pointer;
-        color: $bl-color;
         display: flex;
         align-items: center;
+        cursor: pointer;
+        color: $bl-color;
       }
     
       &__link {
@@ -145,8 +147,8 @@
         line-height: 32px;
 
         &:hover{
-          color: $bg-bord-hover;
           text-decoration: underline;
+          color: $bg-bord-hover;
         }
 
         @media screen and (max-width: 1024px){
@@ -186,8 +188,8 @@
         line-height: 32px;
 
         &:hover{
-          transition: .9s;
           transform: rotateX(360deg);
+          transition: .9s;
         }
     }
 
@@ -239,8 +241,8 @@
         line-height: 32px;
 
         &:hover{
-          transition: .9s;
           transform: rotateX(360deg);
+          transition: .9s;
         }
     }
 
@@ -296,8 +298,9 @@
          width: calc(632px + (632 - 300) * (100vw - 1920px) / (1920 - 320));
 
         @media screen and (max-width: 1024px){
-          margin: 0 auto 96px;
-          justify-content: center;
+          width: 100%;
+          justify-content: space-between;
+          //margin: 0 auto 96px;
         }
     }
 
@@ -308,8 +311,8 @@
         color: $bl-color;
 
         &:hover{
-          transition: .9s;
           transform: rotateX(360deg);
+          transition: .9s;
         }
 
         @media screen and (max-width: 1024px){
@@ -319,7 +322,7 @@
     }
 
 
-  .info {
+.info {
     background-color: $info-color;
     margin-bottom: 24px;
 

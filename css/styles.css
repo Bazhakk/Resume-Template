@@ -81,8 +81,8 @@ ul {
   min-height: 695px;
   left: 0;
   z-index: -1;
-  background-color: #E94D35;
   animation: backgroundBlockAnima 0.6s linear 0.1s forwards;
+  background-color: #E94D35;
 }
 @keyframes backgroundBlockAnima {
   0% {
@@ -104,8 +104,10 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .left-block {
+    width: 100%;
     display: flex;
     margin: 0 auto;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -185,8 +187,8 @@ ul {
   color: #000000;
 }
 .left-block .social__title:hover {
-  transition: 0.9s;
   transform: rotateX(360deg);
+  transition: 0.9s;
 }
 @media screen and (max-width: 1024px) {
   .left-block .social__title {
@@ -194,10 +196,10 @@ ul {
   }
 }
 .left-block .social__item {
-  cursor: pointer;
-  color: #000000;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  color: #000000;
 }
 .left-block .social__link {
   position: relative;
@@ -207,8 +209,8 @@ ul {
   line-height: 32px;
 }
 .left-block .social__link:hover {
-  color: #E94D35;
   text-decoration: underline;
+  color: #E94D35;
 }
 @media screen and (max-width: 1024px) {
   .left-block .social__link {
@@ -243,8 +245,8 @@ ul {
   line-height: 32px;
 }
 .left-block .education__logo:hover {
-  transition: 0.9s;
   transform: rotateX(360deg);
+  transition: 0.9s;
 }
 .left-block .education__box {
   margin-bottom: 40px;
@@ -289,8 +291,8 @@ ul {
   line-height: 32px;
 }
 .left-block .skills__logo:hover {
-  transition: 0.9s;
   transform: rotateX(360deg);
+  transition: 0.9s;
 }
 .left-block .skills__box {
   margin-bottom: 40px;
@@ -340,8 +342,8 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .right-block__img {
-    margin: 0 auto 96px;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 .right-block__experience {
@@ -351,8 +353,8 @@ ul {
   color: #000000;
 }
 .right-block__experience:hover {
-  transition: 0.9s;
   transform: rotateX(360deg);
+  transition: 0.9s;
 }
 @media screen and (max-width: 1024px) {
   .right-block__experience {
