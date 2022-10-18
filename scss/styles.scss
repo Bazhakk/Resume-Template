@@ -6,223 +6,223 @@
 //BACKGROUND BLOCK
 
 .background-block {
-    position: absolute;
-    width: 0;
-    min-height: 695px;
-    left: 0;
-    z-index: -1;
-    animation: backgroundBlockAnima .6s linear .1s forwards;
-    background-color: $bg-bord;
-    
-    @keyframes backgroundBlockAnima {
-      0% {
-        width: 0%;
-      }
-      100% {
-        width: 100%;
-      }
+  position: absolute;
+  width: 0;
+  min-height: 695px;
+  left: 0;
+  z-index: -1;
+  animation: backgroundBlockAnima .6s linear .1s forwards;
+  background-color: $bg-bord;
+  
+  @keyframes backgroundBlockAnima {
+    0% {
+      width: 0%;
     }
-
-    @media screen and (max-width: 1024px){
-      background-color: $white-color;
+    100% {
+      width: 100%;
     }
   }
+
+  @media screen and (max-width: 1024px){
+    background-color: $white-color;
+  }
+}
 
   //LEFT-BLOCK
 
-  .left-block {
-    max-width: 344px;
-    flex-basis: 42%;
+.left-block {
+  max-width: 344px;
+  flex-basis: 42%;
 
-    @media screen and (max-width: 1024px){
-      width: 100%;
-      display: flex;
-      margin: 0 auto;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-  
-  .box {
-    writing-mode: vertical-rl;
-    transform: rotate(0.5turn);
-    margin-right: 164px;
-    margin-top: 150px;
-    margin-bottom: 136px;
+  @media screen and (max-width: 1024px){
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    @media screen and (max-width: 1024px){
-      transform: rotate(-90deg);
-      margin: 0 auto;
-      overflow-x: hidden;
-      text-align: center;
-    }
+.box {
+  writing-mode: vertical-rl;
+  transform: rotate(0.5turn);
+  margin-right: 164px;
+  margin-top: 150px;
+  margin-bottom: 136px;
 
-    &__subtitle,
-    &__title,
-    &__name {
-        font-family: 'Bai';
-        font-weight: 700;
-        margin: 0;
-        color: $white-color;
+  @media screen and (max-width: 1024px){
+    transform: rotate(-90deg);
+    margin: 0 auto;
+    overflow-x: hidden;
+    text-align: center;
+  }
 
-        @media screen and (max-width: 1024px){
-          color: $bl-color;
-        }
-    }
-  
-    &__title {
-      font-size: 56px;
-      line-height: 64px;
+  &__subtitle,
+  &__title,
+  &__name {
+      font-family: 'Bai';
+      font-weight: 700;
+      margin: 0;
+      color: $white-color;
 
-      @media screen and (max-width: 480px){
-        font-size: 28px;
-        line-height: 32px;
-      }
-    }
-  
-    &__subtitle{
-      margin-bottom: 30px;
-      font-size: 80px;
-      line-height: 96px;
-      
       @media screen and (max-width: 1024px){
-        margin: 10px;
-        font-size: 40px;
-        line-height: 16px;
+        color: $bl-color;
       }
-    }
-  
-    &__name {
-        font-size: 24px;
-        line-height: 32px;
+  }
+
+  &__title {
+    font-size: 56px;
+    line-height: 64px;
+
+    @media screen and (max-width: 480px){
+      font-size: 28px;
+      line-height: 32px;
     }
   }
+
+  &__subtitle{
+    margin-bottom: 30px;
+    font-size: 80px;
+    line-height: 96px;
+    
+    @media screen and (max-width: 1024px){
+      margin: 10px;
+      font-size: 40px;
+      line-height: 16px;
+    }
+  }
+
+  &__name {
+      font-size: 24px;
+      line-height: 32px;
+  }
+}
   
   //SOCIAL
 
-    .social {
-      padding: 24px;
-      margin-top: 88px;
-      margin-bottom: 192px;
+.social {
+  padding: 24px;
+  margin-top: 88px;
+  margin-bottom: 192px;
 
-      svg {
-        margin-right: 8px;
-      }
-      
-      @media screen and (max-width: 1024px){
-        margin: 0 auto;
-        overflow-x: hidden;
-        text-align: center;
-      }
-    
-      &__title {
-        font-family: 'Bai';
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 32px;
-        margin-bottom: 16px;
-        color: $bl-color;
+  svg {
+    margin-right: 8px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    margin: 0 auto;
+    overflow-x: hidden;
+    text-align: center;
+  }
 
-        &:hover{
-          transform: rotateX(360deg);
-          transition: .9s;
-        }
+  &__title {
+    font-family: 'Bai';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    color: $bl-color;
 
-        @media screen and (max-width: 1024px){
-          margin-bottom: 8px;
-        }
-      }
-    
-      &__item {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        color: $bl-color;
-      }
-    
-      &__link {
-        position: relative;
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 32px;
-
-        &:hover{
-          text-decoration: underline;
-          color: $bg-bord-hover;
-        }
-
-        @media screen and (max-width: 1024px){
-          color: $bl-color;
-        }
-      }
-    
-      &__instagram {
-        position: relative;
-        margin-bottom: 16px;
-
-        @media screen and (max-width: 1024px){
-          margin: 0 auto;
-        }
-      }
-
-      &__ball {
-        position: relative;
-      }
+    &:hover {
+      transform: rotateX(360deg);
+      transition: .9s;
     }
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $bl-color;
+  }
+
+  &__link {
+    position: relative;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+
+    &:hover{
+      text-decoration: underline;
+      color: $bg-bord-hover;
+    }
+
+    @media screen and (max-width: 1024px) {
+      color: $bl-color;
+    }
+  }
+
+  &__instagram {
+    position: relative;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__ball {
+    position: relative;
+  }
+}
     
 
   //EDUCATION
 
-  .education {
-    max-width: 248px;
-    margin-bottom: 104px;
+.education {
+  max-width: 248px;
+  margin-bottom: 104px;
 
-    @media screen and (max-width: 1024px){
-      margin: 0 auto;
-    }
-  
-    &__logo {
-        font-family: 'Bai';
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 32px;
+  @media screen and (max-width: 1024px) {
+    margin: 0 auto;
+  }
 
-        &:hover{
-          transform: rotateX(360deg);
-          transition: .9s;
-        }
-    }
+  &__logo {
+    font-family: 'Bai';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
 
-    &__box {
-        margin-bottom: 40px;
-
-        @media screen and (max-width: 1024px){
-          margin-bottom: 20px;
-        }
-    }
-
-    &__title {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 32px;
-    }
-
-    &__subtitle {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    &__years {
-        font-family: 'Inter';
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: $bg-bord;
+    &:hover {
+      transform: rotateX(360deg);
+      transition: .9s;
     }
   }
+
+  &__box {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+  }
+
+  &__subtitle {
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+  }
+
+  &__years {
+      font-family: 'Inter';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $bg-bord;
+  }
+}
   
   //SKILLS
 
