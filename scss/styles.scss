@@ -284,10 +284,6 @@
       line-height: 32px;
       color: $white-color;
 
-      &:hover{
-        text-decoration: underline;
-      }
-
       @media screen and (max-width: 1024px){
         color: $bl-color;
       }
@@ -300,7 +296,6 @@
         @media screen and (max-width: 1024px){
           width: 100%;
           justify-content: space-between;
-          //margin: 0 auto 96px;
         }
     }
 
@@ -328,11 +323,6 @@
 
     &__item {
         padding: 40px 40px;
-
-         &:hover {
-          transform: scale(1.1);
-          margin: 5px;
-         }
     }
 
     &__present {
