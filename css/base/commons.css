@@ -13,26 +13,8 @@
   src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
   font-weight: 700;
 }
-body {
-  margin: 0;
-  padding: 0;
-}
-
-main,
-section {
-  overflow-x: hidden;
-}
-
-img {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
+* {
+  box-sizing: border-box;
 }
 
 .container {
@@ -46,18 +28,6 @@ ul {
   .container {
     display: block;
   }
-}
-
-.border {
-  max-width: 1120px;
-  margin: 93px 164px;
-  border: 1px solid #EEEEEE;
-}
-
-.progress-file {
-  max-width: 224px;
-  max-height: 8px;
-  background-color: #E94D35;
 }
 
 /*# sourceMappingURL=commons.css.map */
