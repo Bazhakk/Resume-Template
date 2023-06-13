@@ -12,8 +12,8 @@
     gap: 100px;
 
     @media (max-width: 1024px) {
-        display: block;
-        padding: 60px 16px;
+      display: block;
+      padding: 60px 16px;
     }
     
     @keyframes backgroundBlockAnima {
@@ -33,7 +33,7 @@
     color: $white-color;
 
     @media (max-width: 1024px) {
-        display: none;
+      display: none;
     }
   }
 
@@ -55,7 +55,7 @@
     width: 525px;
 
     @media (max-width: 1024px) {
-        display: none;
+      display: none;
     }
   }
 
@@ -78,7 +78,7 @@
     }
 
     @media (max-width: 1024px) {
-        display: none;
+      display: none;
     }
   }
 }
@@ -87,46 +87,46 @@
     display: none;
 
     @media (max-width: 1024px) {
-        display: inline;
+      display: inline;
     }
 
     &__presentation {
-        font-family: 'Bai';
-        font-weight: 700;
-        color: $white-color;
+      font-family: 'Bai';
+      font-weight: 700;
+      color: $white-color;
     }
 
     &__title {
-        font-size: 56px;
-        line-height: 64px;
+      font-size: 56px;
+      line-height: 64px;
     }
     
     &__subtitle{
-        font-size: 24px;
-        line-height: 32px;
+      font-size: 24px;
+      line-height: 32px;
     }
 
     &__img {
-        max-width: 295px;
-        max-height: 270px;
-        border-radius: 50%;
+      max-width: 295px;
+      max-height: 270px;
+      border-radius: 50%;
     }
 
     .contact-menu {
-        display: grid;
-        gap: 20px;
-        font-family: 'Bai';
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 32px;
-        margin-bottom: 16px;
-        color: $white-color;
-    
-        &__tel,
-        &__email {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-        }
+      display: grid;
+      gap: 20px;
+      font-family: 'Bai';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+      margin-bottom: 16px;
+      color: $white-color;
+  
+      &__tel,
+      &__email {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
     }
 }

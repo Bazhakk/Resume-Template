@@ -2,3 +2,50 @@
 @import "../base/commons.scss";
 @import "../base/fonts.scss";
 @import "../base/base.scss";
+
+.education {
+    padding: 100px 0;
+
+    @media (max-width: 1024px) {
+        padding: 40px 0;
+    }
+
+    &__title {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.04em;
+        color: $black-color;
+    }
+
+    .educations {
+        display: flex;
+        padding: 0;
+        gap: 40px;
+
+        @media (max-width: 1024px) {
+            display: grid;
+            gap: 24px;
+        }
+
+        &__item {
+            width: 955px;
+            padding: 20px;
+            border-radius: 12px;
+            background: $white-color;
+            filter: drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25));
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%);
+            backdrop-filter: blur(2px);
+        }
+        
+        &__text {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0.04em;
+            color: $black-color;
+        }
+    }
+}

@@ -55,16 +55,11 @@ ul {
 }
 
 .container {
-  display: flex;
   width: 100%;
   max-width: 1112px;
   margin: 0 auto;
-  justify-content: space-between;
-}
-@media screen and (max-width: 1024px) {
-  .container {
-    display: block;
-  }
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -102,16 +97,11 @@ ul {
 }
 
 .container {
-  display: flex;
   width: 100%;
   max-width: 1112px;
   margin: 0 auto;
-  justify-content: space-between;
-}
-@media screen and (max-width: 1024px) {
-  .container {
-    display: block;
-  }
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -280,6 +270,130 @@ ul {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Bai";
+  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1112px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Bai";
+  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Bai";
+  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+section {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.education {
+  padding: 100px 0;
+}
+@media (max-width: 1024px) {
+  .education {
+    padding: 40px 0;
+  }
+}
+.education__title {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.education .educations {
+  display: flex;
+  padding: 0;
+  gap: 40px;
+}
+@media (max-width: 1024px) {
+  .education .educations {
+    display: grid;
+    gap: 24px;
+  }
+}
+.education .educations__item {
+  width: 955px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  filter: drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%);
+  backdrop-filter: blur(2px);
+}
+.education .educations__text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  color: #000000;
 }
 
 /*# sourceMappingURL=home.css.map */

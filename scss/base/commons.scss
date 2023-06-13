@@ -6,13 +6,9 @@
 }
 
 .container {
-  display: flex;
   width: 100%;
   max-width: 1112px;
   margin: 0 auto;
-  justify-content: space-between;
-
-  @media screen and (max-width: 1024px){
-    display: block;
-  }
+  padding: 0 20px;
+  box-sizing: border-box;
 }
