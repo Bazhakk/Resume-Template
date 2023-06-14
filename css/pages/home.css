@@ -451,7 +451,7 @@ ul {
   }
 }
 .education__title {
-  max-width: 714px;
+  max-width: 350px;
   padding-bottom: 24px;
   font-family: "Bai";
   font-weight: 700;
@@ -468,6 +468,7 @@ ul {
 .education__subtitle {
   max-width: 750px;
   position: relative;
+  padding-bottom: 40px;
   font-family: "Inter";
   font-weight: 500;
   font-size: 28px;
