@@ -138,5 +138,11 @@ ul {
   content: "•";
   padding-right: 16px;
 }
+.skills__text::before::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #E94D35;
+}
 
 /*# sourceMappingURL=skills.css.map */

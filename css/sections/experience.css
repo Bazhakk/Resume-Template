@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
@@ -107,11 +108,11 @@ ul {
   list-style: none;
 }
 
-.projects {
+.experience {
   padding-bottom: 100px;
 }
-.projects__title {
-  max-width: 210px;
+.experience__title {
+  max-width: 280px;
   padding-bottom: 24px;
   font-family: "Bai";
   font-weight: 700;
@@ -119,43 +120,30 @@ ul {
   line-height: 64px;
   color: #000000;
 }
-.projects__title::after {
+.experience__title::after {
   content: "";
   display: block;
   margin: 0 auto;
   border: 1px solid #E94D35;
 }
-.projects .slider {
-  max-width: 800px;
-  width: 100%;
-  display: flex;
-  gap: 40px;
-}
-.projects .slider__element {
-  padding: 16px;
-  border-radius: 12px;
-  background: #FFFFFF;
-  filter: drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%);
-  backdrop-filter: blur(2px);
-}
-.projects .slider__img {
-  width: 300px;
-  height: 470px;
-}
-.projects .slider__title {
+.experience__subtitle {
+  position: relative;
   font-family: "Inter";
   font-weight: 500;
-  font-size: 22px;
-  line-height: 35px;
+  font-size: 28px;
+  line-height: 40px;
   color: #000000;
 }
-.projects .slider__subtitle {
+.experience__subtitle::before {
+  content: "•";
+  padding-right: 16px;
+}
+.experience__text {
   font-family: "Inter";
   font-weight: 500;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 22px;
   color: #000000;
 }
 
-/*# sourceMappingURL=projects.css.map */
+/*# sourceMappingURL=experience.css.map */
