@@ -11,12 +11,35 @@
     }
 
     &__title {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 36px;
-        letter-spacing: 0.04em;
+        max-width: 714px;
+        padding-bottom: 24px;
+        font-family: 'Bai';
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 64px;
         color: $black-color;
+
+        &::after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            border: 1px solid $bg-color;
+        }
+    }
+
+    &__subtitle {
+        max-width: 750px;
+        position: relative;
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        color: $black-color;
+
+        &::before {
+            content: "\2022";
+            padding-right: 16px;
+        }
     }
 
     .educations {
@@ -40,11 +63,11 @@
         }
         
         &__text {
-            font-family: 'Inter';
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 36px;
-            letter-spacing: 0.04em;
+            padding-left: 10px;
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 40px;
             color: $black-color;
         }
     }
