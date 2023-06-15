@@ -280,7 +280,7 @@ ul {
   margin-bottom: 16px;
   color: #FFFFFF;
 }
-.hero .contact__tel, .hero .contact__email {
+.hero .contact__tel, .hero .contact__email, .hero .contact__git {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -312,9 +312,13 @@ ul {
   font-size: 24px;
   line-height: 32px;
 }
+.mobile-menu__photo {
+  padding-top: 60px;
+  text-align: center;
+}
 .mobile-menu__img {
-  max-width: 295px;
-  max-height: 270px;
+  max-width: 449px;
+  max-height: 445px;
   border-radius: 50%;
 }
 .mobile-menu .contact-menu {
@@ -491,7 +495,7 @@ ul {
   }
 }
 .education .educations__item {
-  width: 955px;
+  max-width: 955px;
   padding: 20px;
   border-radius: 12px;
   background: #FFFFFF;

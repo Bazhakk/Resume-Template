@@ -71,7 +71,8 @@
     color: $white-color;
 
     &__tel,
-    &__email {
+    &__email,
+    &__git {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -105,10 +106,15 @@
       font-size: 24px;
       line-height: 32px;
     }
+    
+    &__photo {
+      padding-top: 60px;
+      text-align: center;
+    }
 
     &__img {
-      max-width: 295px;
-      max-height: 270px;
+      max-width: 449px;
+      max-height: 445px;
       border-radius: 50%;
     }
 
