@@ -107,4 +107,48 @@ ul {
   list-style: none;
 }
 
-/*# sourceMappingURL=hero.css.map */
+.project {
+  padding-bottom: 100px;
+}
+.project__container {
+  margin: 0 16px;
+}
+.project__title {
+  max-width: 287px;
+  padding: 24px 0;
+  font-family: "Bai";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: #000000;
+}
+.project__title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #E94D35;
+}
+.project .slider {
+  width: 100%;
+  padding: 0;
+}
+.project .slider__img {
+  max-width: 300px;
+  max-height: 470px;
+}
+.project .slider__title {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 35px;
+  color: #000000;
+}
+.project .slider__subtitle {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=project.css.map */

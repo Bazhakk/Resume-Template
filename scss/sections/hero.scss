@@ -3,136 +3,142 @@
 @import "../base/fonts.scss";
 @import "../base/base.scss";
 
-.hero {
-  animation: backgroundBlockAnima .6s linear .1s forwards;
-  background-color: $bg-color;
+// .hero {
+//   animation: backgroundBlockAnima .6s linear .1s forwards;
+//   background-color: $bg-color;
 
-  &__container {
-    display: flex;
-    gap: 100px;
+//   &__container {
+//     display: flex;
+//     gap: 100px;
 
-    @media (max-width: 1024px) {
-      display: block;
-      padding: 60px 16px;
-    }
+//     @media (max-width: 1024px) {
+//       display: block;
+//       padding: 60px 16px;
+//     }
     
-    @keyframes backgroundBlockAnima {
-      0% {
-        width: 0%;
-      }
-      100% {
-        width: 100%;
-      }
-    }
-  }
+//     @keyframes backgroundBlockAnima {
+//       0% {
+//         width: 0%;
+//       }
+//       100% {
+//         width: 100%;
+//       }
+//     }
+//   }
 
-  &__presentation {
-    padding-top: 115px;
-    font-family: 'Bai';
-    font-weight: 700;
-    color: $white-color;
+//   &__presentation {
+//     padding-top: 115px;
+//     font-family: 'Bai';
+//     font-weight: 700;
+//     color: $white-color;
 
-    @media (max-width: 1024px) {
-      display: none;
-    }
-  }
+//     @media (max-width: 1024px) {
+//       display: none;
+//     }
+//   }
 
-  &__title {
-    font-size: 56px;
-    line-height: 64px;
-  }
+//   &__title {
+//     font-size: 56px;
+//     line-height: 64px;
+//   }
 
-  &__subtitle{
-    font-size: 24px;
-    line-height: 32px;
-  }
+//   &__subtitle{
+//     font-size: 24px;
+//     line-height: 32px;
+//   }
 
-  &__photo {
-    text-align: center;
-  }
+//   &__photo {
+//     text-align: center;
+//   }
 
-  &__img {
-    width: 525px;
+//   &__img {
+//     width: 400px;
+//     height: 400px;
 
-    @media (max-width: 1024px) {
-      display: none;
-    }
-  }
+//     @media (max-width: 1024px) {
+//       display: none;
+//     }
+//   }
 
-  .contact {
-    display: grid;
-    padding-top: 35%;
-    gap: 30px;
-    font-family: 'Bai';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 32px;
-    margin-bottom: 16px;
-    color: $white-color;
+//   &__contact {
+//     display: grid;
+//     gap: 30px;
+//   }
 
-    &__tel,
-    &__email,
-    &__git {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+//   // .contact {
+//   //   display: grid;
+//   //   padding-top: 35%;
+//   //   gap: 30px;
+//   //   font-family: 'Bai';
+//   //   font-weight: 700;
+//   //   font-size: 16px;
+//   //   line-height: 32px;
+//   //   margin-bottom: 16px;
+//   //   color: $white-color;
 
-    @media (max-width: 1024px) {
-      display: none;
-    }
-  }
-}
+//   //   &__tel,
+//   //   &__email,
+//   //   &__git {
+//   //     display: flex;
+//   //     align-items: center;
+//   //     gap: 12px;
+//   //   }
 
-.mobile-menu {
-    display: none;
+//   //   @media (max-width: 1024px) {
+//   //     display: none;
+//   //   }
+//   // }
+// }
 
-    @media (max-width: 1024px) {
-      display: inline;
-    }
+// .mobile-menu {
+//     display: none;
 
-    &__presentation {
-      font-family: 'Bai';
-      font-weight: 700;
-      color: $white-color;
-    }
+//     @media (max-width: 1024px) {
+//       display: inline;
+//     }
 
-    &__title {
-      font-size: 56px;
-      line-height: 64px;
-    }
+//     &__presentation {
+//       font-family: 'Bai';
+//       font-weight: 700;
+//       color: $white-color;
+//     }
+
+//     &__title {
+//       font-size: 56px;
+//       line-height: 64px;
+//     }
     
-    &__subtitle{
-      font-size: 24px;
-      line-height: 32px;
-    }
+//     &__subtitle{
+//       font-size: 24px;
+//       line-height: 32px;
+//     }
     
-    &__photo {
-      padding-top: 60px;
-      text-align: center;
-    }
+//     &__photo {
+//       padding-top: 60px;
+//       text-align: center;
+//     }
 
-    &__img {
-      max-width: 449px;
-      max-height: 445px;
-      border-radius: 50%;
-    }
+//     &__img {
+//       max-width: 449px;
+//       max-height: 445px;
+//       border-radius: 50%;
+//     }
 
-    .contact-menu {
-      display: grid;
-      gap: 20px;
-      font-family: 'Bai';
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 32px;
-      margin-bottom: 16px;
-      color: $white-color;
+//     .contact-menu {
+//       display: grid;
+//       gap: 20px;
+//       font-family: 'Bai';
+//       font-weight: 700;
+//       font-size: 16px;
+//       line-height: 32px;
+//       margin-bottom: 16px;
+//       color: $white-color;
   
-      &__tel,
-      &__email {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-    }
-}
+//       &__tel,
+//       &__email {
+//         display: flex;
+//         align-items: center;
+//         gap: 12px;
+//       }
+//     }
+// }

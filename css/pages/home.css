@@ -217,61 +217,380 @@ ul {
   list-style: none;
 }
 
-.hero {
-  animation: backgroundBlockAnima 0.6s linear 0.1s forwards;
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Bai";
+  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1112px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Bai";
+  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Bai";
+  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+section {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Bai";
+  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1112px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Bai";
+  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Bai";
+  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Bookman";
+  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+section {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.col__container {
+  display: flex;
+  padding-bottom: 100px;
+  gap: 40px;
+}
+@media (max-width: 1180px) {
+  .col__container {
+    display: grid;
+  }
+}
+.col__left {
+  flex-basis: 40%;
+  border-radius: 0 0 105px 0;
   background-color: #E94D35;
 }
-.hero__container {
-  display: flex;
-  gap: 100px;
+.col__right {
+  flex-basis: 60%;
 }
-@media (max-width: 1024px) {
-  .hero__container {
-    display: block;
-    padding: 60px 16px;
-  }
+.col .education {
+  margin: 0 16px;
+  padding: 100px 0;
 }
-@keyframes backgroundBlockAnima {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
+.col .education__title {
+  max-width: 300px;
+  font-family: "Bai";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #000000;
 }
-.hero__presentation {
-  padding-top: 115px;
+.col .education__title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #E94D35;
+}
+.col .education__subtitle {
+  max-width: 750px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000000;
+}
+.col .education__subtitle::before {
+  content: "•";
+  padding-right: 16px;
+}
+.col .education__box {
+  display: grid;
+  padding: 0;
+  gap: 40px;
+}
+.col .education__item {
+  max-width: 700px;
+  padding: 24px 24px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  filter: drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%);
+}
+.col .education__text, .col .education__denotation {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  color: #000000;
+}
+.col .education__img {
+  max-width: 480px;
+}
+.col .experience {
+  margin: 0 16px;
+  padding-bottom: 100px;
+}
+.col .experience__title {
+  max-width: 364px;
+  font-family: "Bai";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+}
+.col .experience__title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #E94D35;
+}
+.col .experience__subtitle {
+  position: relative;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000000;
+}
+.col .experience__subtitle::before {
+  content: "•";
+  padding-right: 16px;
+}
+.col .experience__text {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+.col .experience__denotation {
+  max-width: 772px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000000;
+}
+.col .hero {
+  margin: 0 16px;
+  padding-bottom: 40px;
+  background-color: #E94D35;
+}
+.col .hero__presentation {
+  padding-top: 100px;
   font-family: "Bai";
   font-weight: 700;
   color: #FFFFFF;
 }
-@media (max-width: 1024px) {
-  .hero__presentation {
-    display: none;
-  }
-}
-.hero__title {
+.col .hero__title {
   font-size: 56px;
   line-height: 64px;
 }
-.hero__subtitle {
+.col .hero__subtitle {
   font-size: 24px;
   line-height: 32px;
 }
-.hero__photo {
-  text-align: center;
-}
-.hero__img {
-  width: 525px;
-}
-@media (max-width: 1024px) {
-  .hero__img {
-    display: none;
-  }
-}
-.hero .contact {
+.col .hero__photo {
+  position: relative;
   display: grid;
-  padding-top: 35%;
+  padding-bottom: 40px;
+}
+.col .hero__img {
+  position: absolute;
+  width: 380px;
+  height: 500px;
+  z-index: 2;
+}
+.col .hero__img_1 {
+  width: 410px;
+  height: 520px;
+  position: relative;
+  top: -7%;
+  left: 2%;
+  z-index: 1;
+}
+.col .hero__contact {
+  display: grid;
   gap: 30px;
   font-family: "Bai";
   font-weight: 700;
@@ -280,378 +599,40 @@ ul {
   margin-bottom: 16px;
   color: #FFFFFF;
 }
-.hero .contact__tel, .hero .contact__email, .hero .contact__git {
+.col .hero__contact__tel, .col .hero__contact__email, .col .hero__contact__git {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-@media (max-width: 1024px) {
-  .hero .contact {
-    display: none;
-  }
+.col .skills {
+  margin: 0 16px;
 }
-
-.mobile-menu {
-  display: none;
-}
-@media (max-width: 1024px) {
-  .mobile-menu {
-    display: inline;
-  }
-}
-.mobile-menu__presentation {
+.col .skills__title {
+  max-width: 175px;
   font-family: "Bai";
   font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
   color: #FFFFFF;
 }
-.mobile-menu__title {
-  font-size: 56px;
-  line-height: 64px;
-}
-.mobile-menu__subtitle {
-  font-size: 24px;
-  line-height: 32px;
-}
-.mobile-menu__photo {
-  padding-top: 60px;
-  text-align: center;
-}
-.mobile-menu__img {
-  max-width: 449px;
-  max-height: 445px;
-  border-radius: 50%;
-}
-.mobile-menu .contact-menu {
-  display: grid;
-  gap: 20px;
-  font-family: "Bai";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 32px;
-  margin-bottom: 16px;
-  color: #FFFFFF;
-}
-.mobile-menu .contact-menu__tel, .mobile-menu .contact-menu__email {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-* {
-  box-sizing: border-box;
-}
-
-.container {
-  width: 100%;
-  max-width: 1112px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-
-main,
-section {
-  overflow-x: hidden;
-}
-
-img {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.education {
-  padding: 100px 0;
-}
-@media (max-width: 1024px) {
-  .education {
-    padding: 40px 0;
-  }
-}
-.education__title {
-  max-width: 350px;
-  padding-bottom: 24px;
-  font-family: "Bai";
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 64px;
-  color: #000000;
-}
-.education__title::after {
+.col .skills__title::after {
   content: "";
   display: block;
   margin: 0 auto;
-  border: 1px solid #E94D35;
+  border: 1px solid #FFFFFF;
 }
-.education__subtitle {
-  max-width: 750px;
-  position: relative;
-  padding-bottom: 40px;
+.col .skills__text {
   font-family: "Inter";
   font-weight: 500;
   font-size: 28px;
   line-height: 40px;
-  color: #000000;
+  color: #FFFFFF;
 }
-.education__subtitle::before {
+.col .skills__text::before {
   content: "•";
   padding-right: 16px;
 }
-.education .educations {
-  display: flex;
-  padding: 0;
-  gap: 40px;
-}
-@media (max-width: 1024px) {
-  .education .educations {
-    display: grid;
-    gap: 24px;
-  }
-}
-.education .educations__item {
-  max-width: 955px;
-  padding: 20px;
-  border-radius: 12px;
-  background: #FFFFFF;
-  filter: drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%);
-  backdrop-filter: blur(2px);
-}
-.education .educations__text {
-  padding-left: 10px;
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 40px;
-  color: #000000;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-* {
-  box-sizing: border-box;
-}
-
-.container {
-  width: 100%;
-  max-width: 1112px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-
-main,
-section {
-  overflow-x: hidden;
-}
-
-img {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.skills {
-  padding-bottom: 100px;
-}
-.skills__title {
-  max-width: 210px;
-  padding-bottom: 24px;
-  font-family: "Bai";
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 64px;
-  color: #000000;
-}
-.skills__title::after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  border: 1px solid #E94D35;
-}
-.skills__text {
-  position: relative;
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 40px;
-  color: #000000;
-}
-.skills__text::before {
-  content: "•";
-  padding-right: 16px;
-}
-.skills__text::before::after {
+.col .skills__text::before::after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -767,12 +748,14 @@ ul {
   list-style: none;
 }
 
-.projects {
-  background-color: rgb(219, 215, 215);
+.project {
   padding-bottom: 100px;
 }
-.projects__title {
-  max-width: 210px;
+.project__container {
+  margin: 0 16px;
+}
+.project__title {
+  max-width: 287px;
   padding: 24px 0;
   font-family: "Bai";
   font-weight: 700;
@@ -780,179 +763,32 @@ ul {
   line-height: 64px;
   color: #000000;
 }
-.projects__title::after {
+.project__title::after {
   content: "";
   display: block;
   margin: 0 auto;
   border: 1px solid #E94D35;
 }
-.projects .slider {
+.project .slider {
   width: 100%;
   padding: 0;
 }
-.projects .slider__img {
+.project .slider__img {
   max-width: 300px;
   max-height: 470px;
 }
-.projects .slider__title {
+.project .slider__title {
   font-family: "Inter";
   font-weight: 500;
   font-size: 22px;
   line-height: 35px;
   color: #000000;
 }
-.projects .slider__subtitle {
+.project .slider__subtitle {
   font-family: "Inter";
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
-  color: #000000;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-* {
-  box-sizing: border-box;
-}
-
-.container {
-  width: 100%;
-  max-width: 1112px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-
-main,
-section {
-  overflow-x: hidden;
-}
-
-img {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.experience {
-  padding-bottom: 100px;
-}
-.experience__title {
-  max-width: 425px;
-  padding-bottom: 24px;
-  font-family: "Bai";
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 64px;
-  color: #000000;
-}
-.experience__title::after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  border: 1px solid #E94D35;
-}
-.experience__subtitle {
-  position: relative;
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 40px;
-  color: #000000;
-}
-.experience__subtitle::before {
-  content: "•";
-  padding-right: 16px;
-}
-.experience__text {
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 22px;
   color: #000000;
 }
 

@@ -1,0 +1,55 @@
+@import "../base/variables.scss";
+@import "../base/commons.scss";
+@import "../base/fonts.scss";
+@import "../base/base.scss";
+
+.project {
+    padding-bottom: 100px;
+
+    &__container {
+        margin: 0 16px;
+    }
+
+    &__title {
+        max-width: 287px;
+        padding: 24px 0;
+        font-family: 'Bai';
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 64px;
+        color: $black-color;
+
+        &::after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            border: 1px solid $bg-color;
+        }
+    }
+
+    .slider {
+        width: 100%;
+        padding: 0;
+
+        &__img {
+            max-width: 300px;
+            max-height: 470px;
+        }
+
+        &__title {
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 35px;
+            color: $black-color;
+        }
+
+        &__subtitle {
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            color: $black-color;
+        }
+    }
+}
