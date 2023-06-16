@@ -108,11 +108,12 @@ ul {
 }
 
 .projects {
+  background-color: rgb(219, 215, 215);
   padding-bottom: 100px;
 }
 .projects__title {
   max-width: 210px;
-  padding-bottom: 24px;
+  padding: 24px 0;
   font-family: "Bai";
   font-weight: 700;
   font-size: 56px;
@@ -126,22 +127,12 @@ ul {
   border: 1px solid #E94D35;
 }
 .projects .slider {
-  max-width: 800px;
   width: 100%;
-  display: flex;
-  gap: 40px;
-}
-.projects .slider__element {
-  padding: 16px;
-  border-radius: 12px;
-  background: #FFFFFF;
-  filter: drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%);
-  backdrop-filter: blur(2px);
+  padding: 0;
 }
 .projects .slider__img {
-  width: 300px;
-  height: 470px;
+  max-width: 300px;
+  max-height: 470px;
 }
 .projects .slider__title {
   font-family: "Inter";
