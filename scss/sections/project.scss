@@ -34,6 +34,11 @@
         &__img {
             max-width: 300px;
             max-height: 470px;
+
+            @media (max-width: 1024px) {
+                max-width: 200px;
+                max-height: 370px;
+            }
         }
 
         &__title {
@@ -42,6 +47,12 @@
             font-size: 22px;
             line-height: 35px;
             color: $black-color;
+
+            @media (max-width: 1024px) {
+                max-width: 170px;
+                font-size: 19px;
+                line-height: 25px;
+            }
         }
 
         &__subtitle {
@@ -50,6 +61,11 @@
             font-size: 16px;
             line-height: 28px;
             color: $black-color;
+
+            @media (max-width: 1024px) {
+                font-size: 12px;
+                line-height: 25px;
+            }
         }
     }
 }

@@ -8,21 +8,6 @@
   src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
   font-weight: 500;
 }
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
 * {
   box-sizing: border-box;
 }
@@ -46,21 +31,6 @@
   font-weight: 500;
 }
 @font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -69,21 +39,6 @@
   font-family: "Inter";
   src: url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.svg") format("svg"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
   font-weight: 500;
-}
-@font-face {
-  font-family: "Bai";
-  src: url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.svg") format("svg"), url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Italic.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Italic.svg") format("svg"), url("../../fonts/BookmanOldStyle-Italic.woff") format("woff"), url("../../fonts/BookmanOldStyle-Italic.woff2") format("woff2"), url("../../fonts/BookmanOldStyle-Italic.ttf") format("ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Bookman";
-  src: url("../../fonts/BookmanOldStyle-Bold.eot") format("embedded-opentype"), url("../../fonts/BookmanOldStyle-Bold.svg") format("svg"), url("../../fonts/BookmanOldStyle-Bold.woff") format("woff"), url("../../fonts/BookmanOldStyle-Bold.woff2") format("woff2");
-  font-weight: 700;
 }
 body {
   margin: 0;
@@ -136,6 +91,12 @@ ul {
   max-width: 300px;
   max-height: 470px;
 }
+@media (max-width: 1024px) {
+  .project .slider__img {
+    max-width: 200px;
+    max-height: 370px;
+  }
+}
 .project .slider__title {
   font-family: "Inter";
   font-weight: 500;
@@ -143,12 +104,25 @@ ul {
   line-height: 35px;
   color: #000000;
 }
+@media (max-width: 1024px) {
+  .project .slider__title {
+    max-width: 170px;
+    font-size: 19px;
+    line-height: 25px;
+  }
+}
 .project .slider__subtitle {
   font-family: "Inter";
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
   color: #000000;
+}
+@media (max-width: 1024px) {
+  .project .slider__subtitle {
+    font-size: 12px;
+    line-height: 25px;
+  }
 }
 
 /*# sourceMappingURL=project.css.map */
