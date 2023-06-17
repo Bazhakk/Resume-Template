@@ -14,21 +14,16 @@
 <body>
 
 <main class="home">
-  <section class="col">
-    <div class="col__container">
-  
-      <div class="col__left">
-        <div class="hero">
+
+  <section class="hero">
+    <div class="hero__container container">
+      <div class="hero__col">
+        <div class="hero__col hero__col-left">
           <div class="hero__presentation">
             <h1 class="hero__subtitle">Front-end Developer</h1>
             <h2 class="hero__title">Bazhak Kateryna</h2>
-            <div class="hero__photo">
-              <img src="img/hero/photo.jpg" alt="Hero" class="hero__img">
-              <img src="img/hero/border.png" alt="Hero" class="hero__img hero__img_1">
-            </div>
-          </div>
   
-            <div class="hero__contact">
+            <div class="contact">
               <span contact__tel>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="19" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                   <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
@@ -51,87 +46,145 @@
               </span>
             </div>
           </div>
-  
-          <div class="skills">
-            <h2 class="skills__title">SKILLS</h2>
-              <p class="skills__text">CSS,SCSS,HTML5</p>
-              <p class="skills__text">Javascript,jQuery</p>
-              <p class="skills__text">Wordpress</p>
-              <p class="skills__text">Git</p>
-              <p class="skills__text">Адаптивная верстка</p>
-              <p class="skills__text">Аккуратный, читаемый, продуманный код</p>
-          </div>
-      </div>
-
-      <div class="col__right">
-        <div class="education">
-          <h1 class="education__title">EDUCATION</h1>
-          <p class="education__subtitle">2014-2019</p>
-          <h2 class="education__text">Одесский Государственный Экологический Универсисет</h2>
-  
-          <p class="education__subtitle">2021-2022</p>
-          <h3 class="education__text">Обучение в IT-Школе Hillel:</h3> 
-
-          <ul class="box">
-            <li class="box__item">
-              <p class="box__denotation">Front-end Basic</p>
-              <img src="img/education/sertificat-basic.png" alt="Profile" class="box__img">
-            </li>
-
-            <li class="box__item">
-              <p class="box__denotation">Front-end Basic</p>
-              <img src="img/education/sertificat-basic.png" alt="Profile" class="box__img">
-            </li>
-          </ul>
-  
-          <!-- <ul class="education__box">
-            <li class="education__item">
-              <p class="education__denotation">Front-end Basic</p>
-              <img src="img/education/sertificat-basic.png" alt="Profile" class="slick">
-            </li>
-  
-            <li class="education__item">
-              <p class="education__denotation">Front-end Pro</p>
-              <img src="img/education/sertificat-pro.png" alt="Profile" class="slick">
-            </li>
-          </ul> -->
         </div>
-  
-        <div class="experience">
-          <h2 class="experience__title">Work experience</h2>
-          <p class="experience__subtitle">2020-2022</p>
-          <h3 class="experience__denotation">Контент-менеджер в интернет магазине ювелирных украшений Roberto Bravo/Style Avenue</h3>
-          <span class="experience__text">Внесение и обновление контента на веб-сайтах https://style-avenue.ua/, https://robertobravo.com.ua/magaziny/</span>
-          <span class="experience__text">Опыт работы с 1С</span>
-          <span class="experience__text">Поддержка процесса создания контента, включая помощь в разработке идеи, написании текстов и т.д.</span>
+
+        <div class="hero__col hero__col-right">
+          <img src="img/hero/photo.jpg" alt="Hero" class="hero__img">
+          <img src="img/hero/border.png" alt="Hero" class="hero__img hero__img_1">
         </div>
       </div>
     </div>
   </section>
 
+  <section class="education">
+    <div class="education__container container">
+        <h1 class="education__title" data-aos="fade-right" data-aos-delay="150">EDUCATION</h1>
+        <p class="education__subtitle" data-aos="fade-right" data-aos-delay="350">2014-2019</p>
+        <h2 class="education__text" data-aos="fade-right" data-aos-delay="350">Одесский Государственный Экологический Универсисет</h2>
+
+        <p class="education__subtitle" data-aos="fade-right" data-aos-delay="550">2021-2022</p>
+        <h3 class="education__text" data-aos="fade-right" data-aos-delay="550">Обучение в IT-Школе Hillel:</h3> 
+
+        <div class="education__box">
+          <div class="education__item" data-aos="fade-down-left" data-aos-delay="750">
+            <img src="img/education/sertificat-basic.png" alt="Profile" class="education__img">
+            <div class="education__name">
+              <p class="education__denotation">Front-end Basic</p>
+            </div>
+          </div>
+
+          <div class="education__item" data-aos="fade-down-left" data-aos-delay="750">
+            <img src="img/education/sertificat-pro.png" alt="Profile" class="education__img">
+            <div class="education__name">
+              <p class="education__denotation">Front-end Pro</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-box">
+          <div class="mobile-box__item" data-aos="fade-down-left" data-aos-delay="150">
+            <p class="mobile-box__denotation mobile-box__denotation_other">Front-end Basic</p>
+            <img src="img/education/sertificat-basic.png" alt="IMG" class="mobile-box__img">
+          </div>
+
+          <div class="mobile-box__item" data-aos="fade-down-left" data-aos-delay="250">
+            <p class="mobile-box__denotation">Front-end Pro</p>
+            <img src="img/education/sertificat-pro.png" alt="IMG" class="mobile-box__img">
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <div class="experience__container container">
+      <h2 class="experience__title" data-aos="flip-left" data-aos-delay="150">Work experience</h2>
+      <p class="experience__subtitle" data-aos="flip-left" data-aos-delay="250">2020-2022</p>
+      <h3 class="experience__denotation" data-aos="flip-left" data-aos-delay="350">Контент-менеджер в интернет магазине ювелирных украшений Roberto Bravo/Style Avenue</h3>
+      <p class="experience__text" data-aos="flip-left" data-aos-delay="550">Внесение и обновление контента на веб-сайтах https://style-avenue.ua/, https://robertobravo.com.ua/magaziny/</p>
+      <p class="experience__text"data-aos="flip-left" data-aos-delay="750">Опыт работы с 1С</p>
+      <p class="experience__text experience__text-bottom" data-aos="flip-left" data-aos-delay="950">Поддержка процесса создания контента, включая помощь в разработке идеи, написании текстов и т.д.</p>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="skills__container container">
+      <h2 class="skills__title" data-aos="fade-down" data-aos-delay="150">SKILLS</h2>
+        <p class="skills__text" data-aos="fade-down" data-aos-delay="250">CSS,SCSS,HTML5</p>
+        <p class="skills__text" data-aos="fade-down" data-aos-delay="350">Javascript,jQuery</p>
+        <p class="skills__text" data-aos="fade-down" data-aos-delay="450">Wordpress</p>
+        <p class="skills__text" data-aos="fade-down" data-aos-delay="550">Git</p>
+        <p class="skills__text" data-aos="fade-down" data-aos-delay="650">Адаптивная верстка</p>
+        <p class="skills__text" data-aos="fade-down" data-aos-delay="750">Аккуратный, читаемый, продуманный код</p>
+    </div>
+  </section>
+
   <section class="project">
-    <div class="project__container">
-      <h2 class="project__title">My projects</h2>
-      <ul class="slider">
+    <div class="project__container container">
+      <h2 class="project__title" data-aos="fade-right" data-aos-delay="150">My projects</h2>
+
+      <ul class="slider" data-aos="zoom-in-down" data-aos-delay="250">
         <li class="slider__element">
-            <img src="img/projects-img/Alivio.png" alt="Slider" class="slider__img"/>
+          <img src="img/projects-img/Insure-Investors.png" alt="Slider" class="slider__img"/>
           <p class="slider__title">Веб-страница "Alivio"</p>
           <span class="slider__subtitle">https://github.com/Bazhakk/Alivio</span>
         </li>
 
         <li class="slider__element">
-          <img src="img/projects-img/cafe-street.png" alt="Slider" class="slider__img"/>
+          <img src="img/projects-img/Travel-web.png" alt="Slider" class="slider__img"/>
+          <p class="slider__title">Веб-страница "Travel"</p>
+          <span class="slider__subtitle">https://github.com/Bazhakk/travel-web</span>
+        </li>
+
+        <li class="slider__element">
+          <img src="img/projects-img/Cafe-Street.png" alt="Slider" class="slider__img"/>
           <p class="slider__title">Веб-страница "Cafe-Street"</p>
           <span class="slider__subtitle">https://github.com/Bazhakk/Cafe-street</span>
         </li>
 
         <li class="slider__element">
-          <img src="img/projects-img/Insure-Investors.png" alt="Slider" class="slider__img"/>
+          <img src="img/projects-img/Alivio.png" alt="Slider" class="slider__img"/>
           <p class="slider__title">Веб-страница "Insure-Investors"</p>
           <span class="slider__subtitle">https://github.com/Bazhakk/Insure---Investors</span>
         </li>
-    </ul>
-    
+
+        <li class="slider__element">
+          <img src="img/projects-img/Resume.png" alt="Slider" class="slider__img"/>
+          <p class="slider__title">Веб-страница "My Portfolio"</p>
+          <span class="slider__subtitle">https://github.com/Bazhakk/Resume-Template</span>
+        </li>
+      </ul>
+
+      <div class="mobile-project">
+        <div class="mobile-project__element" data-aos="zoom-in-down" data-aos-delay="250">
+          <img src="img/projects-img/Insure-Investors.png" alt="Slider" class="mobile-project__img"/>
+            <p class="mobile-project__title">Веб-страница "Alivio"</p>
+            <span class="mobile-project__subtitle">https://github.com/Bazhakk/Alivio</span>
+        </div>
+
+        <div class="mobile-project__element" data-aos="zoom-in-down" data-aos-delay="350">
+          <img src="img/projects-img/Travel-web.png" alt="Slider" class="mobile-project__img"/>
+          <p class="mobile-project__title">Веб-страница "Travel"</p>
+          <span class="mobile-project__subtitle">https://github.com/Bazhakk/travel-web</span>
+        </div>
+
+        <div class="mobile-project__element" data-aos="zoom-in-down" data-aos-delay="450">
+          <img src="img/projects-img/Cafe-Street.png" alt="Slider" class="mobile-project__img"/>
+          <p class="mobile-project__title">Веб-страница "Cafe-Street"</p>
+          <span class="mobile-project__subtitle">https://github.com/Bazhakk/Cafe-street</span>
+        </div>
+
+        <div class="mobile-project__element" data-aos="zoom-in-down" data-aos-delay="550">
+          <img src="img/projects-img/Alivio.png" alt="Slider" class="mobile-project__img"/>
+          <p class="mobile-project__title">Веб-страница "Alivio"</p>
+          <span class="mobile-project__subtitle">https://github.com/Bazhakk/Alivio</span>
+        </div>
+
+        <div class="mobile-project__element" data-aos="zoom-in-down" data-aos-delay="650">
+          <img src="img/projects-img/Resume.png" alt="Slider" class="mobile-project__img"/>
+          <p class="mobile-project__title">Веб-страница "My Portfolio"</p>
+          <span class="mobile-project__subtitle">https://github.com/Bazhakk/Resume-Template</span>
+        </div>
+      </div>
     </div>
   </section>
 

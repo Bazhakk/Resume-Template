@@ -1,0 +1,117 @@
+@import "../base/variables.scss";
+@import "../base/commons.scss";
+@import "../base/fonts.scss";
+@import "../base/base.scss";
+
+.hero {
+  animation: backgroundBlockAnima .6s linear .1s forwards;
+  background-color: $bg-hero;
+
+  @media (max-width: 1024px) {
+    padding-top: 25px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 100px;
+    
+    @keyframes backgroundBlockAnima {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  }
+
+  &__col {
+    display: flex;
+    padding: 50px 0;
+    gap: 80px;
+
+    &-left {
+      font-family: 'Bai';
+      font-weight: 700;
+      color: $white-color;
+
+      @media (max-width: 1024px) {
+        padding-top: 0;
+      }
+    }
+
+    &-right {
+      position: relative;
+    }
+
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+      gap: 24px;
+    }
+  }
+
+  &__title {
+    font-size: 56px;
+    line-height: 64px;
+
+    @media (max-width: 1024px) {
+      font-size: 45px;
+      line-height: 55px;
+    }
+  }
+
+  &__subtitle{
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__img {
+    position: absolute;
+    width: 372px;
+    height: 500px;
+    z-index: 2;
+
+    @media (max-width: 860px) {
+      width: 300px;
+      height: 400px;
+    }
+
+    &_1 {
+        width: 410px;
+        height: 520px;
+        position: relative;
+        top: -7%;
+        left: 2%;
+        z-index: 1;
+
+        @media (max-width: 860px) {
+            width: 320px;
+            height: 420px;
+        }
+    }
+}
+
+  .contact {
+    display: grid;
+    padding-top: 33%;
+    gap: 30px;
+    font-family: 'Bai';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    color: $white-color;
+
+    @media (max-width: 1024px) {
+      padding-top: 0;
+    }
+
+    &__tel,
+    &__email,
+    &__git {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+}

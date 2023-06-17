@@ -1,13 +1,6 @@
 jQuery(document).ready(function ( $ ) {
 
   // Slick-slider
-  //Education
-  $('.box').slick({
-    arrows: false,
-    dots: true
-  });
-
-
   //Project
   $('.slider').slick({
     infinite: true,

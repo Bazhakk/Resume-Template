@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.svg") format("svg"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
@@ -62,83 +63,52 @@ ul {
   list-style: none;
 }
 
-.project {
-  padding-bottom: 100px;
+.experience {
   background-color: rgb(245, 239, 239);
 }
-@media (max-width: 1024px) {
-  .project {
-    padding: 30px 0;
-  }
-}
-.project__title {
-  max-width: 287px;
-  padding-top: 24px;
+.experience__title {
+  max-width: 348px;
+  padding-top: 40px;
   font-family: "Bai";
   font-weight: 700;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 48px;
+  line-height: 60px;
   color: #000000;
 }
-.project__title::after {
+.experience__title::after {
   content: "";
   display: block;
   margin: 0 auto;
   border: 1px solid #E94D35;
 }
-.project .slider {
-  width: 100%;
-  padding: 0;
-}
-.project .slider__img {
-  max-width: 500px;
-}
-@media (max-width: 1070px) {
-  .project .slider__img {
-    max-width: 450px;
-  }
-}
-.project .slider__title {
+.experience__subtitle {
+  position: relative;
   font-family: "Inter";
   font-weight: 500;
-  font-size: 22px;
-  line-height: 35px;
+  font-size: 28px;
+  line-height: 40px;
   color: #000000;
 }
-.project .slider__subtitle {
+.experience__subtitle::before {
+  content: "•";
+  padding-right: 16px;
+}
+.experience__text {
   font-family: "Inter";
   font-weight: 500;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 29px;
   color: #000000;
 }
-@media (max-width: 1024px) {
-  .project .slider {
-    display: none;
-  }
+.experience__text-bottom {
+  padding-bottom: 40px;
 }
-.project .mobile-project {
-  display: none;
-}
-@media (max-width: 1024px) {
-  .project .mobile-project {
-    display: grid;
-    gap: 40px;
-  }
-  .project .mobile-project__title {
-    font-family: "Inter";
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 35px;
-    color: #000000;
-  }
-  .project .mobile-project__subtitle {
-    font-family: "Inter";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    color: #000000;
-  }
+.experience__denotation {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000000;
 }
 
-/*# sourceMappingURL=project.css.map */
+/*# sourceMappingURL=experience.css.map */

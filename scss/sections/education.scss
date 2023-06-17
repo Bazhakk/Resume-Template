@@ -1,0 +1,114 @@
+@import "../base/variables.scss";
+@import "../base/commons.scss";
+@import "../base/fonts.scss";
+@import "../base/base.scss";
+
+.education {
+    padding: 100px 0;
+
+    @media (max-width: 1024px) {
+        padding: 40px 0;
+    }
+
+    &__title {
+        max-width: 300px;
+        font-family: 'Bai';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        color: $black-color;
+
+        &::after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            border: 1px solid $bg-color;
+        }
+    }
+
+    &__subtitle {
+        max-width: 750px;
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        color: $black-color;
+
+        &::before {
+            content: "\2022";
+            padding-right: 16px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        padding: 0;
+        gap: 60px;
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+    
+    &__item {
+        max-width: 700px;
+        filter: drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25));
+    }
+
+    &__text,
+    &__denotation {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 38px;
+        color: $black-color;
+    }
+
+    &__name {
+        position: relative;
+        top: -84%;
+        left: -52%;
+        transform: rotate(270deg);
+
+        @media (max-width: 1024px) {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .mobile-box {
+        display: none;
+
+        @media (max-width: 1024px) {
+            display: inline;
+
+            &__item {
+                filter: drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25));
+            }
+
+            &__denotation {
+                max-width: 140px;
+                font-family: "Inter";
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 38px;
+                color: $black-color;
+
+                &_other {
+                    max-width: 161px;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    border: 1px solid $black-color;
+                }
+            }
+
+            &__img {
+                padding-bottom: 45px;
+            }
+        }
+    }
+}

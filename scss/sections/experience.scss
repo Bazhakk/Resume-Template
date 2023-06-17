@@ -1,0 +1,59 @@
+@import "../base/variables.scss";
+@import "../base/commons.scss";
+@import "../base/fonts.scss";
+@import "../base/base.scss";
+
+.experience {
+    background-color: $background-color;
+
+    &__title {
+        max-width: 348px;
+        padding-top: 40px;
+        font-family: 'Bai';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        color: $black-color;
+
+        &::after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            border: 1px solid $bg-color;
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        color: $black-color;
+
+        &::before {
+            content: "\2022";
+            padding-right: 16px;
+        }
+    }
+
+    &__text {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        color: $black-color;
+
+        &-bottom {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__denotation {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        color: $black-color;
+    }
+}
