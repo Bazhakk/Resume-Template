@@ -11,8 +11,8 @@
     }
 
     &__title {
-        max-width: 300px;
-        font-family: 'Bai';
+        max-width: 270px;
+        font-family: 'DM Sans';
         font-weight: 700;
         font-size: 48px;
         line-height: 64px;
@@ -64,6 +64,10 @@
         color: $black-color;
     }
 
+    &__denotation {
+        color: $bg-text;
+    }
+
     &__name {
         position: relative;
         top: -84%;
@@ -75,6 +79,10 @@
             top: 0;
             left: 0;
         }
+    }
+
+    &__img {
+        padding-left: 16px;
     }
 
     .mobile-box {

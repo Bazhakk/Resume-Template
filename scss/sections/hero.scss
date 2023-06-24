@@ -90,28 +90,40 @@
         }
     }
 }
+}
 
-  .contact {
-    display: grid;
-    padding-top: 33%;
-    gap: 30px;
-    font-family: 'Bai';
-    font-weight: 700;
+.contact {
+  display: grid;
+  padding-top: 33%;
+  gap: 30px;
+  // font-family: 'Bai';
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 32px;
+  margin-bottom: 16px;
+  // color: $white-color;
+
+  @media (max-width: 1024px) {
+    padding-top: 0;
+  }
+
+  &__tel,
+  &__telegram,
+  &__email,
+  &__git {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__namber,
+  &__mail,
+  &__git-hub,
+  &__user {
+    font-family: 'Inter';
+    font-weight: 500;
     font-size: 16px;
     line-height: 32px;
-    margin-bottom: 16px;
     color: $white-color;
-
-    @media (max-width: 1024px) {
-      padding-top: 0;
-    }
-
-    &__tel,
-    &__email,
-    &__git {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
   }
 }
