@@ -277,10 +277,9 @@ ul {
   line-height: 32px;
 }
 .hero__img {
-  position: absolute;
-  width: 372px;
-  height: 500px;
-  z-index: 2;
+  max-width: 372px;
+  max-height: 400px;
+  border-radius: 50%;
 }
 @media (max-width: 860px) {
   .hero__img {
@@ -305,26 +304,73 @@ ul {
 
 .contact {
   display: grid;
+  margin: 0 0 16px 16px;
   padding-top: 33%;
   gap: 30px;
-  margin-bottom: 16px;
 }
 @media (max-width: 1024px) {
   .contact {
     padding-top: 0;
   }
 }
-.contact__tel, .contact__telegram, .contact__email, .contact__git {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.contact__namber, .contact__mail, .contact__git-hub, .contact__user {
+.contact__tel, .contact__email, .contact__git-hub, .contact__telegram {
   font-family: "Inter";
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
   color: #FFFFFF;
+}
+.contact__tel {
+  position: relative;
+}
+.contact__tel::before {
+  content: "";
+  background-image: url("../../img/hero/telephone.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 8px;
+  left: -26px;
+}
+.contact__telegram {
+  position: relative;
+}
+.contact__telegram::before {
+  content: "";
+  background-image: url("../../img/hero/telegram.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 7px;
+  left: -26px;
+}
+.contact__email {
+  position: relative;
+}
+.contact__email::before {
+  content: "";
+  background-image: url("../../img/hero/email.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 8px;
+  left: -26px;
+}
+.contact__git-hub {
+  position: relative;
+}
+.contact__git-hub::before {
+  content: "";
+  background-image: url("../../img/hero/github.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 9px;
+  left: -26px;
 }
 
 @font-face {
