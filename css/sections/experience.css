@@ -148,6 +148,13 @@ ul {
 .experience__text-bottom {
   padding-bottom: 40px;
 }
+.experience__link {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
 .experience__denotation {
   font-family: "Inter";
   font-weight: 500;

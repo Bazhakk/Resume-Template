@@ -49,6 +49,14 @@
         }
     }
 
+    &__link {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        color: $black-color;
+    }
+
     &__denotation {
         font-family: "Inter";
         font-weight: 500;

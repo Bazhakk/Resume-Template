@@ -31,10 +31,7 @@
     gap: 80px;
 
     &-left {
-      font-family: 'Bai';
-      font-weight: 700;
-      color: $white-color;
-
+      margin-top: 50px;
       @media (max-width: 1024px) {
         padding-top: 0;
       }
@@ -51,8 +48,11 @@
   }
 
   &__title {
+    font-family: 'Bai';
+    font-weight: 700;
     font-size: 56px;
     line-height: 64px;
+    color: $white-color;
 
     @media (max-width: 1024px) {
       font-size: 45px;
@@ -61,14 +61,16 @@
   }
 
   &__subtitle{
+    font-family: 'Bai';
+    font-weight: 700;
     font-size: 24px;
     line-height: 32px;
+    color: $white-color;
   }
 
   &__img {
-    max-width: 372px;
-    max-height: 400px;
-    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
 
     @media (max-width: 860px) {
       width: 300px;
@@ -76,12 +78,10 @@
     }
 
     &_1 {
-        width: 410px;
-        height: 520px;
-        position: relative;
-        top: -7%;
-        left: 2%;
-        z-index: 1;
+      position: relative;
+      top: -6%;
+      left: 10%;
+      z-index: 1;
 
         @media (max-width: 860px) {
             width: 320px;
@@ -93,7 +93,7 @@
 
 .contact {
   display: grid;
-  margin: 0 0 16px 16px;
+  margin: 0 0 16px 30px;
   padding-top: 33%;
   gap: 30px;
 
